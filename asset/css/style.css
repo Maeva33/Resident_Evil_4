@@ -269,3 +269,80 @@ footer {
         margin-bottom: 10px; 
     }
 }}
+
+@media screen and (max-width: 434px) {
+    /* Pour le logo */
+    .logo {
+        width: 100%; 
+        height: auto;
+    }
+
+    .logo img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    /* Pour resident */
+
+    .resident {
+        padding: 1rem 0; 
+
+    .resident .content {
+        width: 436px; 
+        height: 208px; 
+        margin-bottom: 1rem; 
+    }
+
+    /* Pour la barre de navigation */
+    .main-menu {
+        padding: 10px 0; 
+    }
+
+    .main-menu a {
+        padding: 10px 0; 
+    }
+}
+}
+
+@media screen and (max-width: 400px) {
+    /* Pour le logo */
+    .logo {
+        width: 100%; 
+        height: auto;
+    }
+
+    .logo img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    /* Pour resident */
+
+    .resident {
+        padding: 1rem 0; 
+
+    .resident .content {
+        width: 300px; 
+        height: 100px; 
+        margin-bottom: 1rem; 
+        display: flex;
+    }
+
+   
+
+    /* Pour la barre de navigation */
+    .main-menu {
+        padding: 10px 0; 
+    }
+
+    .main-menu a {
+        padding: 10px 0; 
+    }
+}
+}
+    
+
+
+
+
+
