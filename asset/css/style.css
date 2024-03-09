@@ -40,8 +40,6 @@ h2 {
     background-color:rgba(192,25,42,255);
     color: white;
 }
-
-
 .main-menu a {
     color: rgba(41,43,44,255);
     text-transform: uppercase;
@@ -56,7 +54,6 @@ h2 {
     list-style: none;
     padding: 25px 0;
 }
-
 .main-menu a {
     padding: 1px 13px;
 }
@@ -78,7 +75,6 @@ h2 {
   width: 200%;
   height: 200%;
 }
-
 /* SECTION => MEDIUM TEXT*/
 #survivez {
     padding: 3% 0%;
@@ -91,20 +87,20 @@ h2 {
 }
 .resident {
     padding: 2rem 1rem;
-    padding-bottom: 5rem ;
+    padding-bottom: 2rem ;
     position: relative;
+    
 }
 .resident .content {
-    border: 2px solid black;
     background-color: rgba(40,39,37,255);
     color: white;
     padding: 1rem;
     width: 400px;
-    height: 300px;
+    height: 200px;
 }
 .resident .img-container {
     width: 100%;
-    height: 25vh;
+    height: 200px;
 }
 .resident .img-container img {
     width: 100%;
@@ -150,7 +146,7 @@ footer {
     margin: 0 10px;
 }
 .trait {
-    border-left: 2px solid white
+    border-left: 2px solid white;
 }
 
 #logobas {
@@ -167,25 +163,34 @@ footer {
     height: 20%;
 }
 
-/* ANIMATION EN SURVOL */
-
+/* ANIMATIONS */
 .main-menu a:hover {
     color: red; 
     transition: color 0.3s ease; 
 }
-
 .btn:hover {
     background-color:rgba(0,0,0,255); 
     transition: background-color 0.3s ease; 
 }
-
 .menu-bas a:hover {
     color: red; 
     transition: color 0.3s ease; 
 }
 
+.resident :hover{
+        box-shadow: 4px 4px 0px black;
+        transform: translate(-4px, -4px);
+}
+
  /* RESPONSIVE */
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 992px) {
+    #actualites .resident {
+        width: 30%;
+        margin: 1rem;
+    }
+}
+
+ @media screen and (max-width: 436px) {
 
     /* Pour le logo */
     .logo {
@@ -198,29 +203,26 @@ footer {
         height: auto; 
     }
     
-    /* Pour la barre de navigation */
-
-    .main-menu {
-        flex-direction: column; 
-        padding: 10px 0; 
+    /* Pour la barre de navigation du haut*/
+    header .main-menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem; 
     }
-
     .main-menu a {
-        padding: 10px 0; 
+        padding: 1rem;
     }
-
-    .bar {
-        display: none; 
-    }
+    
+   .bar {
+    border-left: none;
+   }
 
     /* Pour les actualités */
-
     #actualités {
         flex-direction: column; 
     }
 
     /* Pour resident */
-
     .resident {
         padding: 1rem 0; 
 
@@ -231,7 +233,6 @@ footer {
     }
 
     /* Pour le pré-footer */
-
     #pre-footer {
         padding: 1rem; 
     }
@@ -240,23 +241,25 @@ footer {
     }
     
     /* Pour le footer */
-
     footer {
-        flex-direction: column; 
+        flex-direction: column;
+        text-align: center;
     }
     
     /* Pour le menu du footer */
 
     .menu-bas {
-        padding: 10px 0; 
-        padding-right: 0; 
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem; 
     }
-    .menu-bas a {
-        margin: 5px 0;
+    .menu-bas li {
+        padding: 1rem;
     }
-    .trait {
-        display: none; 
+    .trait a {
+        border-left: none;
     }
+   
 
     /* Pour le logo du footer */
 
@@ -270,7 +273,7 @@ footer {
     }
 }}
 
-@media screen and (max-width: 434px) {
+@media screen and (max-width: 433px) {
     /* Pour le logo */
     .logo {
         width: 100%; 
@@ -283,23 +286,13 @@ footer {
     }
 
     /* Pour resident */
-
     .resident {
         padding: 1rem 0; 
 
     .resident .content {
-        width: 436px; 
-        height: 208px; 
+        width: 100%; 
+        height: auto; 
         margin-bottom: 1rem; 
-    }
-
-    /* Pour la barre de navigation */
-    .main-menu {
-        padding: 10px 0; 
-    }
-
-    .main-menu a {
-        padding: 10px 0; 
     }
 }
 }
@@ -326,17 +319,6 @@ footer {
         height: 100px; 
         margin-bottom: 1rem; 
         display: flex;
-    }
-
-   
-
-    /* Pour la barre de navigation */
-    .main-menu {
-        padding: 10px 0; 
-    }
-
-    .main-menu a {
-        padding: 10px 0; 
     }
 }
 }
